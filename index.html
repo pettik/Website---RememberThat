@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>The 2021 Frontend excersice</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container">
+        <a href="#" class="logo">Remember<span>That</span></a>
+
+        <img
+          src="img/menu.svg"
+          alt="menu-icon"
+          class="mobile-menu"
+          id="mobile-cta"
+        />
+
+        <nav>
+          <img
+            src="img/close.svg"
+            alt="close button"
+            class="mobile-menu-exit"
+            id="mobile-exit"
+          />
+          <ul class="primary-nav">
+            <li>
+              <a href="#" class="current">Home</a>
+            </li>
+            <li>
+              <a href="#">Features</a>
+            </li>
+            <li>
+              <a href="#">Pricing</a>
+            </li>
+          </ul>
+          <ul class="secondary-nav">
+            <li>
+              <a href="#">Contact</a>
+            </li>
+            <li>
+              <a href="#" class="go-premium-CTA">Go Premium</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="container">
+        <div class="left-col">
+          <p class="subhead">It's Nitty &amp; Gritty</p>
+          <h1>A Task App That Doesn't Stink</h1>
+
+          <div class="hero-cta">
+            <a href="#" class="primary-cta">Try for free</a>
+            <a href="#" class="watch-video-cta">
+              <img src="img/watch.svg" alt="camera icon" />Watch a video
+            </a>
+          </div>
+        </div>
+
+        <img src="img/illustration.svg" alt="illustration" class="hero-img" />
+      </div>
+    </section>
+
+    <section class="features-section">
+      <div class="container">
+        <ul class="feature-list">
+          <li>Unlimited Tasks</li>
+          <li>SMS Task Reminder</li>
+          <li>Confetti Explosions upon Task completions</li>
+          <li>Social Media Announcements</li>
+          <li>Real Time Collaboration</li>
+          <li>Other awesome features</li>
+        </ul>
+
+        <img src="img/holding-phone.jpg" alt="Holding phone" />
+      </div>
+    </section>
+
+    <section class="testimonials-section">
+      <div class="container">
+        <ul>
+          <li>
+            <img src="img/person1.jpg" alt="Verunka" />
+
+            <blockquote>
+              "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Accusantium, quod minima? Sunt, repellendus! Quod, illum!"
+            </blockquote>
+            <cite> - Ricardo</cite>
+          </li>
+          <li>
+            <img src="img/person2.jpg" alt="Silvia" />
+
+            <blockquote>
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+              velit"
+            </blockquote>
+            <cite> - Silvi</cite>
+          </li>
+          <li>
+            <img src="img/person3.jpg" alt="Petr" />
+
+            <blockquote>
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+              delectus accusamus praesentium."
+            </blockquote>
+            <cite> - Veronica</cite>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-left">
+          <h2>Poslat zprávu:</h2>
+
+          <form action="">
+            <label for="name">Jméno:</label>
+            <input type="text" id="name" name="name" placeholder="Jan Novák" />
+
+            <label for="email">E-mail:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="uzivatel@seznam.cz"
+            />
+
+            <label for="message">Zpráva:</label>
+            <input
+              type="textarea"
+              id="message"
+              name="message"
+              placeholder="Vaše zpráva"
+            />
+
+            <input
+              type="submit"
+              class="send-message-cta"
+              value="Odeslat zprávu"
+            />
+          </form>
+        </div>
+
+        <div class="contact-right">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6700.388888143628!2d17.119055401101047!3d50.34201356229298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4711e6109bb6c27b%3A0x400af0f66164380!2s790%2065%20Kobyl%C3%A1%20nad%20Vidnavkou!5e0!3m2!1scs!2scz!4v1643554857726!5m2!1scs!2scz"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const mobileBtn = document.getElementById('mobile-cta');
+      nav = document.querySelector('nav');
+      mobileBtnExit = document.getElementById('mobile-exit');
+
+      mobileBtn.addEventListener('click', () => {
+        nav.classList.add('menu-btn');
+      });
+
+      mobileBtnExit.addEventListener('click', () => {
+        nav.classList.remove('menu-btn');
+      });
+    </script>
+  </body>
+</html>
